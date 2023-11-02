@@ -1,0 +1,110 @@
+body {
+    background: #360033; /* Fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD133, #FF5733, #360033);
+    background: linear-gradient(to right, #FFD133, #FF5733, #360033);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    }
+
+
+#timer {
+    font-size: 7rem;
+    font-weight: 600;
+    text-shadow: 2px 2px #5f5f56;
+    color: #F1F2B5;
+    width: 500px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+    
+#buttons {
+    
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center ;
+}
+
+button{
+    background-color: #F1F2B5;
+    color: #FF5733;
+    font-weight: bold;
+    padding: 1.5rem 4rem;
+    margin: 1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(58, 51, 51, 0.3);
+    transition: all .2s;
+}
+
+#buttons .col-md-auto button {
+    font-size: 2rem;
+    border-radius: 15px;
+    border: none
+    
+}
+
+
+button:hover{
+    background-color: #360033;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#buttons .col-md-auto button[disabled]{
+    opacity: .5;
+    cursor: default;
+}
+
+#datepicker {
+    
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px #5f5f56;
+    color: #F1F2B5;
+    width: 500px;
+    margin: 40px auto;
+}
+
+#date {
+    border-radius: 10px;
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;
+    color: #FF5733;
+}
+
+@media (max-width: 1000px) {
+    #timer{
+        font-size: 4rem;
+        width: 350px;
+    }
+
+    .center-column {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #buttons  {
+       
+       margin: 8px 0;
+       row-gap: 16px;
+    }
+
+    #datepicker {
+        font-size: 1.5rem;
+        font-weight: 400;
+        
+    }
+    
+    #date {
+        width: 180px;
+        height: 35px;
+    }
+
+}
